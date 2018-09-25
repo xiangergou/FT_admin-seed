@@ -60,6 +60,7 @@ export default {
     },
     // 裁剪后图片列表
     emitCropperData(list = []) {
+      console.log(list)
       this.cropperData = list
     },
     /* 选择图片 */

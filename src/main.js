@@ -22,6 +22,7 @@ Vue.use(VueLazyload, {
   /* error: errorPic,*/
   loading: lazyLoadPic
 })
+
 Vue.component('icon-svg', IconSvg)
 
 Object.keys(filters).forEach(key => {

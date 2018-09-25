@@ -122,6 +122,7 @@ export default {
       for (let i = 0; i < this.list.length; i++) {
         previewList.push(await imgloadAsync(this.list[i]))
       }
+      console.log(index, previewList)
       this.$preview.open(index, previewList)
     },
     handleDelete(index, item) {

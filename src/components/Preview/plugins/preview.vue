@@ -30,7 +30,11 @@
         <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
         </button>
         <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
+          <div class="pswp__caption__center">
+          </div>
+          <div class="pswp__caption__center" @click="previewEdit()">
+            编辑
+          </div>
         </div>
       </div>
     </div>
@@ -50,11 +54,13 @@
           history: false,
           shareEl: false,
           tapToClose: true
-        }
+        },
+        currentPic: ''
       }
     },
     methods: {
       open (index, list, params = Object.assign(this.defaultOptions, {})) {
+        this.currentPic = list
         let options = Object.assign({
           index: index,
           getThumbBoundsFn (index) {
@@ -68,7 +74,10 @@
         this.photoswipe.init()
       },
       close () {
-        this.photoswipe.close()
+        // this.photoswipe.close()
+      },
+      previewEdit () {
+        console.log(this.currentPic, 'sdsadsadsa')
       }
     }
   }
@@ -77,4 +86,8 @@
 <style>
   @import '~photoswipe/dist/photoswipe.css';
   @import '~photoswipe/dist/default-skin/default-skin.css';
+  .pswp__caption{
+    display: flex;
+  }
+
 </style>
