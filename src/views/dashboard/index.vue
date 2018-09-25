@@ -51,7 +51,7 @@ export default {
     }
   }
   &-text {
-    font-size: 30px;
+    font-size: 31px;
     line-height: 46px;
   }
 }
