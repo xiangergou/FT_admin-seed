@@ -91,7 +91,6 @@ export default {
     }
   },
   computed: {
-
   },
   methods: {
     handleView(index) {

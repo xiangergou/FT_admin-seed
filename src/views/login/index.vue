@@ -44,8 +44,8 @@ export default {
     }
     return {
       loginForm: {
-        mobile: '',
-        password: ''
+        mobile: '15158864844',
+        password: '123456'
       },
       loginRules: {
         mobile: [
