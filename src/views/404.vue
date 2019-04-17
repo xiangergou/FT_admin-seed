@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     message() {
-      return '老夫说了，这个页面你不能进......'
+      return '老夫说了，这个页面你不能进.....'
     }
   }
 }
